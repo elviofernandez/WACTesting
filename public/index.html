@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="libs/wsClient.js"></script>
+</head>
+
+<body onload="init();">
+
+    <div id="waContainer" class="myContainer app">
+        <br>
+        <button type="button" onclick="getMessages(event)">Get messages</button>
+        <br>
+        <br>
+        <textarea id="body" rows="4" cols="50">test for twilio</textarea>
+        <br>
+        <button type="button" onclick="sendMessage(event)">Send!</button>
+    </div>
+    <span id="status"></span>
+    <div id="result"></div>
+
+</body>
+
+</html>
